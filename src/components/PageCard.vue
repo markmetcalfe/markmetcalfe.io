@@ -9,6 +9,7 @@
           v-if="backButtonPage"
           :to="backButtonPage"
           class="pagecard-back"
+          aria-label="Back"
         >
           <i class="fa-solid fa-chevron-left" />
         </router-link>
@@ -44,7 +45,7 @@ export default defineComponent({
 .pagecard {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   position: absolute;
 
   &-inner {
@@ -63,7 +64,7 @@ export default defineComponent({
   }
 
   &-simple {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     align-items: center;
   }
@@ -100,7 +101,7 @@ export default defineComponent({
     margin-bottom: 3vmin;
     font-size: 4vmin;
     line-height: 4vmin;
-    font-weight: 600;
+    font-weight: 400;
   }
 }
 </style>

@@ -2,6 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import routes from './routes'
+import '@fontsource/roboto/300.css'
+import '@fontsource/roboto/400.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 
 const router = createRouter({
@@ -17,9 +19,13 @@ router.beforeEach((to, _, next) => {
   next()
 })
 router.afterEach((to, from) => {
-  const toDepth = to.path.match(/\/[^/]+?/g)?.length ?? 0
-  const fromDepth = from.path.match(/\/[^/]+?/g)?.length ?? 0
-  to.meta.transition = fromDepth > toDepth ? 'slide-left' : 'slide-right'
+  if (!from.name) {
+    to.meta.transition = null
+  } else {
+    const toDepth = to.path.match(/\/[^/]+?/g)?.length ?? 0
+    const fromDepth = from.path.match(/\/[^/]+?/g)?.length ?? 0
+    to.meta.transition = fromDepth > toDepth ? 'slide-left' : 'slide-right'
+  }
 })
 
 createApp(App).use(router).mount('#app')

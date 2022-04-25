@@ -5,6 +5,7 @@
         v-if="backButtonPage"
         :to="backButtonPage"
         class="headerbanner-back"
+        aria-label="Back"
       >
         <i class="fa-solid fa-chevron-left" />
       </router-link>
@@ -67,7 +68,7 @@ export default defineComponent({
     margin: 0;
     font-size: 4vmin;
     line-height: 4vmin;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   &-main {
