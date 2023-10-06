@@ -12,7 +12,7 @@ Playwright is used for automated end-to-end testing.
 If you haven't installed playwright before, you will need to run
 
 ```
-npx playwright install --with-deps chromium webkit
+npx playwright install
 ```
 
 Before running `yarn run test`
