@@ -12,7 +12,7 @@ export function initRenderer(container: HTMLElement): void {
   const renderer = new THREE.WebGLRenderer()
   renderer.setSize(width, height)
 
-  window.addEventListener(
+  document.addEventListener(
     'resize',
     () => {
       camera.aspect = window.innerWidth / window.innerHeight
@@ -40,6 +40,10 @@ export function initRenderer(container: HTMLElement): void {
     } else {
       mouseClicks++
     }
+  })
+
+  document.addEventListener('wheel', event => {
+    camera.position.z -= event.deltaY * 0.01
   })
 
   container.appendChild(renderer.domElement)
