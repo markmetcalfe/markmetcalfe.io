@@ -7,10 +7,10 @@ export default {
         headers: {
           "Content-Type": "application/octet-stream",
           "Content-Disposition":
-            'attachment; filename="Mark Metcalfe Resume.pdf"',
+            'attachment; filename="Marko Metcalfe Resume.pdf"',
           "Cache-Control":
             "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
-          "X-Message-From-Mark": "Thanks for checking out my resume!",
+          "X-Message-From-Marko": "Thanks for checking out my resume!",
         },
       });
     } catch (error) {
@@ -70,6 +70,6 @@ async function fetchResumeAsset(
 
 function throwError(debugData: string): never {
   throw new Error(
-    `Failed to download resume.\nPlease contact me directly at mark@markmetcalfe.com for a copy.\n\nError debug data: ${debugData}`,
+    `Failed to download resume.\nPlease contact me directly at marko@markometcalfe.com for a copy.\n\nError debug data: ${debugData}`,
   );
 }

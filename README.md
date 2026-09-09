@@ -1,6 +1,6 @@
-# [markmetcalfe.com](https://markmetcalfe.com)
+# [markometcalfe.com](https://markometcalfe.com)
 
-The source code for my personal portfolio site at [markmetcalfe.com](https://markmetcalfe.com).
+The source code for my personal portfolio site at [markometcalfe.com](https://markometcalfe.com).
 
 ## What it contains
 

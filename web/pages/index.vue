@@ -6,7 +6,7 @@
           <ProfilePhoto />
         </div>
         <div class="home-header-right">
-          <h1>Mark Metcalfe</h1>
+          <h1>Marko Metcalfe</h1>
           <div class="home-header-links">
             <a
               href="https://github.com/markmetcalfe"
