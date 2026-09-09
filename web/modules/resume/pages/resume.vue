@@ -5,7 +5,7 @@
       <LinkButton
         text="PDF"
         title="Download as a PDF"
-        href="https://markmetcalfe.com/resume.pdf"
+        href="https://markometcalfe.com/resume.pdf"
         large
         external
       >

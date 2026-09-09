@@ -7,7 +7,7 @@ import {
 test.describe("HomePage", () => {
   test("can load page", async ({ page }, testInfo) => {
     await page.goto("/");
-    await expect(page.locator('text="Mark Metcalfe"')).toBeVisible();
+    await expect(page.locator('text="Marko Metcalfe"')).toBeVisible();
 
     await expect(page.locator('text="Me"')).toBeVisible();
     await expect(page.locator('text="My Work"')).toBeVisible();
@@ -22,7 +22,7 @@ test.describe("HomePage", () => {
 
     await expect(link).toHaveAttribute(
       "href",
-      "mailto:mark@markmetcalfe.com",
+      "mailto:marko@markometcalfe.com",
     );
   });
 
