@@ -383,7 +383,10 @@ testPerProject(
         ),
       })),
     );
-    expect(scores.map(s => s.name).sort()).toEqual(["Marko", "Steve"]);
+    expect(scores.map(s => s.name).sort()).toEqual([
+      "Marko",
+      "Steve",
+    ]);
     for (const { points } of scores) {
       expect(points).toBeGreaterThanOrEqual(75);
       expect(points).toBeLessThanOrEqual(85);

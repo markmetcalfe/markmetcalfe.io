@@ -22,7 +22,9 @@ test.describe("ResumePage", () => {
 
     await Promise.all([page.waitForURL("/"), link.click()]);
 
-    await expect(page.locator("body")).toContainText("Marko Metcalfe");
+    await expect(page.locator("body")).toContainText(
+      "Marko Metcalfe",
+    );
   });
 
   test("download button has correct link", async ({ page }) => {
